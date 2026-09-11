@@ -26,16 +26,19 @@ Developed as part of the editorial benchmark protocol at **[ModHello](https://mo
 ## 🚀 Quick Start
 
 1. Connect your Android device via USB and verify ADB connection:
-bash
+```bash
 adb devices
+```
 
-2. Launch your game on the phone (e.g., PUBG Mobile, Homescapes, or Genshin Impact).
+2. Launch your game on the phone (e.g., *PUBG Mobile*, *Homescapes*, or *Genshin Impact*).
 
 3. Run the analyzer with the target package name:
+```bash
 python fps_analyzer.py --package com.playrix.homescapes --target-fps 60
+```
 
-4.Play for 60 seconds. The script will output an instant terminal report:
-
+4. Play for 60 seconds. The script will output an instant terminal report:
+```text
 ============================================================
               GAMEPLAY BENCHMARK REPORT
 ============================================================
@@ -51,8 +54,16 @@ Frame Time (p95):  16.82 ms
 Frame Time (p99):  19.45 ms
 ============================================================
 Verdict: PASS - Smooth gameplay with minimal micro-stutters.
+```
 
-📖 Methodology & Testing Guidelines
-For our complete 4-step hardware benchmarking methodology across Snapdragon and Dimensity chips, visit our editorial review guidelines at: 👉 ModHello Editorial Review Standards
+---
 
+## 📖 Methodology & Testing Guidelines
 
+For our complete 4-step hardware benchmarking methodology across Snapdragon and Dimensity chips, visit our editorial review guidelines at:
+👉 **[ModHello Editorial Review Standards](https://modhello.com/author/marcus-vance-sterling/)**
+
+---
+
+## 📄 License
+MIT License. Maintained by **Marcus Vance Sterling** ([@marcusvancesterling](https://github.com/marcusvancesterling)).
